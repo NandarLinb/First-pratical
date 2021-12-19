@@ -1,0 +1,461 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: white;
+    color: gray;
+    font-family: 'Lato','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;/*user a sing pyay aung  font tway ko render cha pay tar*/
+}
+
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+.clear-fixed{
+ zoom: 1;
+}
+.clear-fixed:after{
+    content:".";
+     display: block;
+     clear: both;
+     height: 0;
+     visibility: hidden;
+}
+/*width ko that mat*/
+.row{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.700),rgba(0,0,0,0.700)),url(./img/hero.jpg);
+    background-size: cover;
+    background-position:center ;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.hero-text-box{
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{ 
+    margin-top: 0;
+    color: white;
+    font-size: 240%;
+   word-spacing: 3px;
+   margin-bottom: 20px;
+   letter-spacing: 1px;
+}
+.btn:link,.btn:visited,input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    font-weight: 300;
+    transition: 0.5s;
+    margin-right: 15px;
+}
+.btn:hover,.btn:active{
+    background-color:#fdcb6e;
+    
+}
+.b1:link,.b1:visited{
+    background-color: #fdcb6e;
+    border:1px solid #fdcb6e;
+    color: white;
+}
+.b1:hover,.b1:active{
+    border: 1px solid #fabf53;
+    background-color: #ffbf48;
+}
+.b2:link,.b2:visited{
+    border:1px solid #fdcb6e;
+    color: #ccc3af;
+}
+.b2:hover,.b2:active{
+    border: 1px solid #ffbf48;
+    color: #777164;
+}
+
+/*nav*/
+.logo{
+   height: 100px;
+   width: auto;
+   float: left;
+   margin-top: 20px;
+}
+.main-nav{
+  float: right;
+  list-style-type: none;
+  margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,.main-nav li a:visited{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+    padding: 8px 0px;
+}
+.main-nav li a:hover,.main-nav li a:active{
+   border-bottom: 2px solid #ffbf48;
+}
+
+/*Section 1 Feactures*/
+.section-features{
+    padding: 80px 0;
+    height: 90vh;
+}
+.section-features .long-para{
+   margin-bottom: 30px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+
+}
+h2::after{
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    background-color:#ffbf48 ;
+    margin-top: 30px;
+}
+.long-para{
+    width: 70%;
+    line-height: 145%;
+    margin-left: 15%;
+}
+.box{
+    padding: 1%;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+.iconb{
+    font-size: 300%;
+    display: block;
+    color: #ffbf48;
+    margin-bottom: 10px;
+}
+
+/*section 2 Fav meals showcase*/
+
+.meal-showcase{
+    width: 100%;
+    list-style-type: none;
+}
+.meal-showcase li{
+    display:block;
+    float: left;
+    width: 25%;
+}
+.meal{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+.meal img{
+    opacity: 70%;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+.meal img:hover{
+    transform: scale(1.03);
+     opacity: 1;
+}
+
+
+/* How it work Section3*/
+.section-step{
+    padding-top: 60px;
+    height: 90vh;
+    background-color: rgb(236, 236, 234);
+}
+    
+.stepbox:first-child{
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.stepbox:last-child{
+ padding-left: 3%;
+ margin-top: 70px;
+
+}
+.app-screen{
+    width: 40%;
+}
+.steps{
+    margin-bottom: 40px;
+
+}
+.steps div{
+    display: inline-block;
+    color:#ffbf48;
+    border:2px solid #ffbf48;
+    width:55px;
+    height:55px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    float: left;
+    margin-right: 25px;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+.steps:last-of-type{
+    margin-bottom: 80px;
+}
+
+/*section 4 Cities*/
+.section-cities{
+    padding-top: 60px;
+    height: 90vh;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-features{
+    margin-bottom: 15px;
+}
+.icon-small{
+    color: #ffbf48;
+    display: inline-block;
+    text-align: center;
+    font-size: 120%;
+    width: 30px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+.city-twi:link,.city-twi:visited{
+    text-decoration: none;
+    color: #fcb228;
+    border-bottom: 1px solid transparent;
+    padding-bottom:2px;
+    transition: 0.5s;
+}
+.city-twi:hover,.city-twi:active{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #fcb228;
+    padding-bottom:2px;
+}
+
+
+/*section5 customer reviews*/
+
+.customer-reviews{
+    padding: 60px 0;
+    height: 80vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../../resources/img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+blockquote{
+    font-style: italic;
+    padding:2% ;
+    line-height: 145%;
+}
+blockquote::before{
+    content: open-quote;
+    font-size: 400%;
+}
+blockquote::after{
+    content: close-quote;
+    color: transparent;
+    height: 0;
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+   vertical-align: middle;
+}
+
+/*section 6 Sign up section*/
+.sign-up{
+    padding: 60px 0;
+    height: 90vh;
+    background-color: rgb(236, 236, 234);
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5px;
+    box-shadow: 0 2px 2px rgb(179, 176, 176);
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+.price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #fcb228;
+}
+.price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.price-meal{
+    font-size: 80%;
+
+}
+.plan-box ul{
+    list-style-type: none;
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+.plan-box div:first-child{
+    background-color: rgb(252, 246, 246);
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+
+/*section 7 contact form*/
+.section-form{
+    padding: 60px 0;
+    height: 90vh;
+   
+}
+.contact{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],input[type=email],
+select,textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #616060;
+}
+textarea{
+    height: 100px;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+*:focus{
+    outline: none;
+}
+
+/*Footer section 8*/
+footer{
+    background-color: rgb(17, 16, 16);
+}
+.footer-nav{
+    list-style-type: none;
+    float: left;
+}
+.social-link{
+    list-style-type: none;
+    float: right;
+}
+.footer-nav li,
+.social-link li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-link li:last-child{
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li  a:link,
+.social-link li  a:visited{
+ text-decoration: none;
+ border-bottom: 0;
+ color: #999696;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-link li  a:hover,
+.social-link li  a:active{
+ 
+ color: #fff;
+}
+.social-link li  a{
+    font-size: 130%;
+
+}
+footer p{
+    text-align: center;
+    color: rgb(94, 92, 92);
+    font-size: 90%;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+/*Query CSS*/
+
+/* For1024 to 1200*/
+@media only screen and (max-width:1200px){
+    
+}
+
+
+
+/* For small tablet and big tablet  768 to 1023*/
+@media only screen and (max-width:1023px){
+    
+}
+
+/* For small phone and small tablet 481 to 767*/
+@media only screen and (max-width:767px){
+    
+}
+
+
+/* For small phone 0 to 480px*/
+@media only screen and (max-width:480px){
+
+}
+
