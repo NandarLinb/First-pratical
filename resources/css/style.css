@@ -12,21 +12,22 @@ html{
     text-rendering: optimizeLegibility;/*user a sing pyay aung  font tway ko render cha pay tar*/
 }
 
+
 h1,h2,h3{
     font-weight: 300;
     text-transform: uppercase;
     
 }
 .clear-fixed{
- zoom: 1;
-}
+    zoom: 1;
+   }
 .clear-fixed:after{
-    content:".";
-     display: block;
-     clear: both;
-     height: 0;
-     visibility: hidden;
-}
+       content:".";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+   }
 /*width ko that mat*/
 .row{
   max-width: 1140px;
@@ -195,8 +196,9 @@ h3{
 /* How it work Section3*/
 .section-step{
     padding-top: 60px;
-    height: 90vh;
-    background-color: rgb(236, 236, 234);
+    background-color: rgb(236, 236, 234); 
+    height: 100vh;
+    background-attachment: fixed;
 }
     
 .stepbox:first-child{
@@ -282,11 +284,13 @@ h3{
 
 .customer-reviews{
     padding: 60px 0;
-    height: 80vh;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../../resources/img/back-customers.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
+    background-position:center ;
+    height: 100vh;
+    
 }
 blockquote{
     font-style: italic;
@@ -319,6 +323,7 @@ cite img{
     padding: 60px 0;
     height: 90vh;
     background-color: rgb(236, 236, 234);
+    background-attachment: fixed;
 }
 .plan-box{
     background-color: #fff;
@@ -434,28 +439,4 @@ footer p{
     padding: 50px;
 }
 
-/*Query CSS*/
-
-/* For1024 to 1200*/
-@media only screen and (max-width:1200px){
-    
-}
-
-
-
-/* For small tablet and big tablet  768 to 1023*/
-@media only screen and (max-width:1023px){
-    
-}
-
-/* For small phone and small tablet 481 to 767*/
-@media only screen and (max-width:767px){
-    
-}
-
-
-/* For small phone 0 to 480px*/
-@media only screen and (max-width:480px){
-
-}
 

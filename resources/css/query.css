@@ -1,0 +1,162 @@
+/*Query CSS*/
+
+/* For1024 to 1200*/
+@media only screen and (max-width:1200px){
+    .row{
+        padding: 0 2%;
+    }
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+
+
+/* For small tablet and big tablet  768 to 1023*/
+@media only screen and (max-width:1023px){
+    html{
+    
+        font-size: 18px;
+       
+    }
+    section{
+        padding: 60px 0;
+        height: 65vh;
+    }
+    .long-para{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .stepbox:first-child{
+        
+        margin-top: 10px;
+      }
+      
+      .stepbox:last-child{
+      
+       margin-top: 20px;
+      
+      }
+      .steps{
+        margin-bottom: 30px;
+    
+    }
+    .steps:last-of-type{
+        margin-bottom: 60px;
+    }
+    .app-screen{
+        width: 47%;
+    }
+    .icon-small{
+        width: 20px;
+        margin-right: 4px;
+    }
+    .city-features{
+        font-size: 90%;
+    }
+    .plan-box{
+       
+        width: 100%;
+        margin-left: 0;
+       
+    }
+    .price{
+        font-size: 250%;
+       
+    }
+    .contact{
+        width: 80%;
+        
+    }
+    
+}
+
+/* For small phone and small tablet 481 to 767*/
+@media only screen and (max-width:767px){
+    body{
+        font-size: 16px;
+    }
+    section{
+        padding: 30px 0;
+    }
+    .section-features{
+        height: 170vh;
+    }
+    .section-meal{
+        padding: 0;
+       height: 30vh;
+    }
+    .section-step{
+        height: 110vh;
+        
+    }
+    .section-cities{
+       height:310vh;
+    }
+    .customer-reviews{
+       height: 115vh;
+    }
+    .sign-up{
+       height: 200vh;
+    }
+    .section-form{
+     
+    }
+    
+    .row,
+    .hero-text-box{
+        padding: 0 4%;
+    }
+    .col{
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    .main-nav{
+        display: none;
+    }
+    .long-para{
+        width: 100%;
+        margin-left: 0;
+    }
+    h1{
+        font-size: 180%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    .steps div{
+       
+        width:40px;
+        height:40px;
+        padding: 5px;
+        margin-right: 5px;
+
+    }
+    .steps{
+        margin-bottom: 20px;
+    }
+    .steps:last-of-type{
+        margin-bottom: 20px;
+    }
+    .stepbox:first-child{
+       text-align: center;
+      }
+      
+      .app-screen{
+          width: 40%;
+      }
+    
+}
+
+
+/* For small phone 0 to 480px*/
+@media only screen and (max-width:480px){
+    section{
+        padding: 25px 0;
+    }
+    .sign-up{
+        width: 100%;
+    }
+}
+
